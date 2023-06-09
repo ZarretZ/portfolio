@@ -10,7 +10,7 @@ body {
   font-size: 30px;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
-  background: url(../img/images/header-background.png) 50% 30% / cover no-repeat;
+  background: url(../../global/img/header-portfolio.png) 50% 30% / cover no-repeat;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
   transition: all 1s;
 }
 
-h1,
+/* h1, */
 h2,
 h3,
 .logo,
@@ -31,6 +31,7 @@ h3,
   height: 100%;
   width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 h1 {
@@ -42,7 +43,7 @@ h1 {
 
 h2 {
   opacity: 80%;
-  font-size: 80px;
+  font-size: 70px;
   color: #444444;
 }
 
@@ -107,7 +108,7 @@ h3 {
   gap: 50px;
   display: flex;
   margin-right: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   align-items: center;
   transition: all 0.5s;
 }
@@ -146,7 +147,7 @@ h3 {
 
 .header__content-inner {
   display: flex;
-  padding-top: 25%;
+  padding-top: 15%;
   align-items: center;
   flex-direction: column;
 }
@@ -162,184 +163,70 @@ h3 {
   max-width: 550px;
 }
 
-.title__btn {
-  width: 200px;
+/* ---------------PORTFOLIO-EMAIL----------------- */
+/* ---------------PORTFOLIO-EMAIL----------------- */
+
+.portfolio__email {
+  margin-bottom: 50px;
+}
+
+.portfolio__email-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.portfolio__email-item {
+  position: relative;
+  border: 1px solid #bfbec7;
+  transition: all .5s;
+}
+
+.portfolio__email-item:hover .portfolio__email-overlay {
+  background-color: rgba(219, 222, 231, 0.8);
+  scale: 1;
+}
+
+.portfolio__email-item:hover .email__overlay-content {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.portfolio__email-overlay {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  padding: 10px;
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
-  border-radius: 20px;
-  background: #695aa6;
-  border: 1px solid #695aa6;
-}
-
-/* -------------------MAIN--------------------- */
-/* -------------------MAIN--------------------- */
-
-/* ---------------SECTION--ABOUT--ОБО-МНЕ---------------- */
-/* ---------------SECTION--ABOUT--ОБО-МНЕ---------------- */
-
-.about {
-  margin-bottom: 200px;
-}
-
-.about__inner {
-  display: flex;
-  align-items: center;
-}
-
-.about__inner-content {
-  display: flex;
-  flex-direction: column;
-}
-
-/* ---------------SECTION--PORTFOLIO--УСЛУГИ---------------- */
-/* ---------------SECTION--PORTFOLIO--УСЛУГИ---------------- */
-
-.portfolio__grid {
-  gap: 30px;
-  display: grid;
-  grid-template: repeat(1, 1fr) / repeat(4, 1fr);
-}
-
-.portfolio__grid-item {
-  display: flex;
-  padding: 60px 0;
-  border-radius: 4px;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #b7b1ce;
-  height: 260px;
-  transition: all 0.5s;
-}
-
-.portfolio__grid-item:hover {
-  padding: 10px 0;
-}
-
-.grid__item-text {
-  display: inline;
-  text-align: center;
-  font-size: 24px;
-  max-width: 200px;
+  background-color: rgba(221, 219, 231, 0);
   transition: all 0.3s;
   scale: 0;
 }
 
-.portfolio__grid-item:hover .grid__item-text {
-  display: inline;
-  text-align: center;
-  font-size: 24px;
-  max-width: 200px;
-  scale: 1;
-}
-
-.portfolio__grid-item img {
-  width: 100px;
-  height: 100px;
-  transition: all 0.5s;
-}
-
-.portfolio__grid-item:hover img {
-  width: 60px;
-  height: 60px;
-}
-
-.portfolio__grid-item p {
-  font-size: 24px;
-  color: #695aa6;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.5s;
-}
-
-.portfolio__grid-item:hover p {
-  margin-bottom: 30px;
-}
-
-/* ---------------SECTION--CONTACTS--КОНТАКТЫ---------------- */
-/* ---------------SECTION--CONTACTS--КОНТАКТЫ---------------- */
-.contacts {
-  margin: 170px 0 70px 0;
-}
-
-.contacts__form {
-  gap: 20px;
+.email__overlay-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.contacts__form-box {
-  gap: 20px;
-  width: 700px;
-  display: flex;
-}
-
-.form-input {
-  width: 100%;
-  height: 36px;
-  display: block;
-  border-radius: 4px;
-  border: 1px solid #ced4da;
-  background: rgba(0, 0, 0, 0.01);
-}
-
-.contacts__form-textarea {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #ced4da;
-  background: rgba(0, 0, 0, 0.01);
-}
-
-.contacts__form-button {
-  width: 138px;
-  height: 38px;
-  border-radius: 4px;
-  border: 1px solid #695aa6;
-}
-
-.contacts__overlay {
-  position: fixed;
-  z-index: -1;
-  opacity: 0;
-  top: 0;
-  left: 0;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.24);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
   transition: all 0.5s;
 }
 
-.contacts__modal-windows {
-  width: 250px;
-  margin: 20% auto;
-  background-color: rgb(231, 229, 229);
-  padding: 30px 30px;
-  text-align: center;
-  border: 1px solid #948fa5;
+.portfolio__email-item img {
+  max-width: 350px;
 }
 
-.contacts_modal-btn {
-  position: fixed;
-  top: 1px;
-  left: 100px;
-  margin: 20% 50%;
-  background-color: transparent;
+.portfolio__inner-line {
+  width: 70%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #96959c;
 }
-
-.kwork-link {
-  margin-top: 20px;
-  font-size: 15px;
-  line-height: 30px;
-}
-
-/* .kwork-link svg {
-  margin-top: 10px;
-} */
 
 /* ---------------FOOTER------------------ */
 /* ---------------FOOTER------------------ */

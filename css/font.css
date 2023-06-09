@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Baloo;
+  font-style: normal;
+  font-display: swap;
+  src: local("Baloo Cyrillic"), url('../fonts/Baloo-Cyrillic.woff') format('woff'),
+    url('../fonts/Baloo-Cyrillic.woff2') format('woff2'),
+    url('../fonts/Baloo-Cyrillic.eot') format('eot');
+}

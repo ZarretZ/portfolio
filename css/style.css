@@ -9,7 +9,7 @@
 body {
   font-size: 30px;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: url(../img/images/header-background.png) 50% 30% / cover no-repeat;
 }
 
@@ -24,7 +24,7 @@ h3,
 .logo,
 .header__nav-inner,
 .portfolio__grid-item p {
-  font-family: 'Baloo', sans-serif;
+  font-family: "Baloo", sans-serif;
 }
 
 .container {
@@ -89,7 +89,6 @@ h3 {
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* Add class for menu, when scroll */
 /* Добавляет класс при скролинге */
 .fixed {
   background-color: rgba(255, 255, 255, 1);
@@ -115,23 +114,32 @@ h3 {
 .hamburger {
   color: white;
   font-size: 45px;
-  transition: all 2s;
+  transition: all 1s;
   background-color: transparent;
   margin-right: 30px;
 }
 
+.hamburger:hover {
+  scale: 1.1;
+}
+
 .nav__item {
   position: relative;
+  transition: all .5s;
+}
+
+.nav__item:hover {
+  position: relative;
+  scale: 1.05;
 }
 
 /* Использование переменной для изменения цвета псевдоэлемента */
 .nav__item::before {
   top: 30px;
-  content: '';
+  content: "";
   height: 2px;
   width: 23px;
   position: absolute;
-  border-radius: 50%;
   background-color: var(--nav-item-background-color);
   opacity: 0;
 }
@@ -139,6 +147,7 @@ h3 {
 .nav__item:hover::before {
   transition: all 1s;
   opacity: 1;
+  scale: 1.2;
 }
 
 /* -----------------HEADER-CONTENT----------------- */

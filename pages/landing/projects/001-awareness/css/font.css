@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Muller;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Muller"), url('../fonts/muller700.woff') format('woff'),
+    url('../fonts/muller700.woff2') format('woff2'),
+    url('../fonts/muller700.eot') format('eot');
+}
+
+@font-face {
+  font-family: Muller;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Muller"), url('../fonts/muller400.woff') format('woff'),
+    url('../fonts/muller400.woff2') format('woff2'),
+    url('../fonts/muller400.eot') format('eot');
+}

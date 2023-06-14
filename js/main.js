@@ -2,6 +2,8 @@ const nav = document.querySelector('.header__nav')
 const hamburger = document.querySelector('.hamburger')
 const navList = document.querySelector('.nav__list')
 
+/* ------------НАВИГАЦИЯ------------ */
+
 //Функция смены значений псевдоэлементов.
 function changePseudoElementValue(variableName, value) {
   document.documentElement.style.setProperty(variableName, value)
@@ -13,12 +15,39 @@ function setMenu(view, px) {
   hamburger.textContent = view
 }
 
+//Функция проверки ширины экрана и дальнейшее выполнение действий
+function checkResize() {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (screenWidth <= 767.98) {
+    hamburger.textContent === 'close'
+      ? setMenu('close', '-10px')
+      : setMenu('menu', '100px')
+  } else {
+    hamburger.textContent === 'close'
+      ? setMenu('close', '0')
+      : setMenu('menu', '100px')
+  }
+}
+//Обработчик изменений ширины экрана
+window.addEventListener('resize', checkResize)
+
+//Стартовая проверка ширины экрана и выполение действий
+checkResize()
+
 //Отрисовка навигации при нажатии кнопки меню
-hamburger.addEventListener('click', () =>
-  hamburger.textContent === 'menu'
-    ? setMenu('close', '0')
-    : setMenu('menu', '100px')
-)
+hamburger.addEventListener('click', () => {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  // Проверяем ширину экрана и выполняем действия при необходимом разрешении
+  if (screenWidth <= 767.98) {
+    hamburger.textContent === 'menu'
+      ? setMenu('close', '-10px')
+      : setMenu('menu', '100px')
+  } else {
+    hamburger.textContent === 'menu'
+      ? setMenu('close', '0')
+      : setMenu('menu', '100px')
+  }
+})
 
 //Отрисовка фона у меню при скролинге.
 window.addEventListener('scroll', function () {
@@ -34,6 +63,8 @@ window.addEventListener('scroll', function () {
     changePseudoElementValue('--nav-item-background-color', 'white')
   }
 })
+
+/* ------------ФОРМА------------ */
 
 //Объявление переменных модального окна.
 const overlay = document.querySelector('.contacts__overlay')
@@ -73,11 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
 //Функция закрытия модального окна и очистка полей ввода.
 
 function closeModalWindows() {
-    overlay.style.opacity = 0
-    overlay.style.zIndex = -1
-    nameInput.value = ''
-    emailInput.value = ''
-    messageTextarea.value = ''
+  overlay.style.opacity = 0
+  overlay.style.zIndex = -1
+  nameInput.value = ''
+  emailInput.value = ''
+  messageTextarea.value = ''
 }
 
 modalButton.onclick = () => {
@@ -108,6 +139,8 @@ document.addEventListener('keydown', function (e) {
     closeModalWindows()
   }
 })
+
+/* ------------СКРОЛЛИНГ------------ */
 
 //Плавный скроллинг.
 const smoothLinks = document.querySelectorAll("a[href^='#']")

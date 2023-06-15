@@ -291,6 +291,33 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .portfolio__global-item:hover .portfolio__global-overlay {
+    background-color: rgba(219, 222, 231, 1);
+    scale: 1;
+  }
+  
+  .portfolio__global-item:hover .global__overlay-content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .portfolio__global-overlay {
+    bottom: 0;
+    height: 75px;
+    background-color: rgba(221, 219, 231, 1);
+    scale: 1;
+  }
+  
+  .global__overlay-content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .global__overlay-content h3 {
+    font-size: 28px;
+  }
+  
+  .global__overlay-content p {
+    font-size: 18px;
+  }
 }
 
 /* -----------TABLET---------- */
@@ -323,6 +350,7 @@ h3 {
   .nav__list {
     gap: 10px;
   }
+
 }
 
 /* -----------TABLET---------- */

@@ -221,6 +221,7 @@ h3 {
   height: 100%;
   top: 50%;
   left: 50%;
+  padding: 5px;
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.5s;
 }
@@ -296,7 +297,7 @@ h3 {
   
   .portfolio__global-overlay {
     bottom: 0;
-    height: 75px;
+    height: 85px;
     background-color: rgba(221, 219, 231, 1);
     scale: 1;
   }

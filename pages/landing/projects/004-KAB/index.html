@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Шаблон</title>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+
+    <!-- SCROLL-TO-TOP -->
+    <button class="scroll-button material-symbols-outlined" onclick="scrollToTop()">stat_3</button>
+
+
+    <div class="background__container header__bg">
+
+      <!-- NAVIGATION -->
+      <nav class="header__nav">
+        <div class="container">
+          <div class="header__nav-inner">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#header">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#about">О нас</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#calc">Калькулятор</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#reviews">Отзывы</a>
+              </li>
+            </ul>
+            <div class="button__box">
+              <div class="button__call-box">
+                <a class="button__call" href="#">Звонок</a>
+              </div>
+              <div class="button__exchange-box">
+                <a class="button__exchange" href="#">Начать обмен</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End of NAVIGATION -->
+
+      <!-- HEADER-BODY -->
+      <div class="header__body" id="header__body">
+        <div class="container">
+          <div class="header__body-inner">
+            <div class="header__logo-box">
+              <img src="img/header/header-logo.png" alt="Logo">
+            </div>
+            <div class="header__slogan-box">
+              <img src="img/header/header-slogan.png" alt="Slogan">
+            </div>
+            <div class="header__body-title">
+              <h1>Сервис обмена Вон на Рубли</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of HEADER-BODY -->
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- SECTION-ABOUT -->
+    <div class="background__container about__bg">
+
+      <section class="about main__about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__image-box">
+              <img src="img/about/about__main-image.jpg" alt="About image">
+            </div>
+            <div class="about__content">
+              <h2>О компании</h2>
+              <p class="p__margin">Мы занимаемся обменом валюты уже более 10 лет. Нас отличает выгодный курс,
+                а так же быстрая скорость совершения сделки. За время нашей работы мы обслужили более 3000 клиентов.
+              </p>
+              <p>
+                Мы занимаемся обменом валюты уже более 10 лет. Нас отличает выгодный курс, а так же быстрая скорость
+                совершения сделки.
+              </p>
+              <ul class="about__list">
+                <li class="about__item">
+                  <span class="about__item-number">950</ы>
+                    <span class="about__item-text">Клиентов в год</span>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-number">98</span>
+                  <span class="about__item-text">Транзакций в сутки</span>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-number">7</span>
+                  <span class="about__item-text">Лет на рынке</span>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-number">12</span>
+                  <span class="about__item-text">Стран</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!--End of SECTION-ABOUT -->
+
+    <!-- SECTION-CALC -->
+    <div class="background__container calc__bg">
+
+      <section class="calc main__calc" id="calc">
+        <div class="container">
+          <div class="calc__inner">
+            <div class="calc__title">
+              <h2>Конвектор валюты</h2>
+            </div>
+            <form class="calc__form">
+              <div class="calc__input-box">
+                <div class="calc__input-pseudo rub">
+                  <input class="calc__input" type="number">
+                </div>
+                <div class="calc__arrows"></div>
+                <div class="calc__input-pseudo won">
+                  <input class="calc__input" type="number">
+                </div>
+              </div>
+              <button class="calc__form-button" type="submit">Обменять валюту</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!--End of SECTION-CALC -->
+
+    <!-- SECTION-REVIEWS -->
+    <section class="reviews main__reviews" id="reviews">
+      <div class="reviews__inner">
+        <div class="container">
+          <h2>Отзывы наших клиентов</h2>
+        </div>
+        <div class="slider">
+          <ul class="slider__cards">
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+              </div>
+            </li>
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+            </li>
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+              </div>
+            </li>
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+              </div>
+            </li>
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+              </div>
+            </li>
+            <li class="slider__card">
+              <div class="slider__card-box">
+                <img src="img/reviews/reviews-slider-image.jpg" alt="Slider image">
+              </div>
+            </li>
+          </ul>
+          <div class="slider__arrows">
+            <a href="#" class="slider__arrow slider__arrow-prev">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" stroke="#3D7FFF" stroke-width="2" />
+                <path
+                  d="M38.75 28.7152H23.925L28.4625 23.11C28.6747 22.8475 28.7768 22.509 28.7463 22.169C28.7158 21.8291 28.5553 21.5155 28.3 21.2973C28.0447 21.0791 27.7156 20.9741 27.3851 21.0054C27.0546 21.0368 26.7497 21.2019 26.5375 21.4644L20.2875 29.178C20.2455 29.2394 20.2078 29.3038 20.175 29.3709C20.175 29.4351 20.175 29.4737 20.0875 29.538C20.0308 29.6854 20.0012 29.8423 20 30.0008C20.0012 30.1593 20.0308 30.3162 20.0875 30.4636C20.0875 30.5279 20.0875 30.5665 20.175 30.6307C20.2078 30.6978 20.2455 30.7622 20.2875 30.8236L26.5375 38.5372C26.655 38.6823 26.8022 38.799 26.9686 38.879C27.1349 38.959 27.3164 39.0003 27.5 39C27.7921 39.0006 28.0751 38.896 28.3 38.7043C28.4266 38.5964 28.5312 38.4638 28.6079 38.3143C28.6846 38.1647 28.7318 38.001 28.7469 37.8326C28.762 37.6643 28.7447 37.4945 28.6959 37.333C28.6471 37.1715 28.5678 37.0215 28.4625 36.8916L23.925 31.2864H38.75C39.0815 31.2864 39.3995 31.151 39.6339 30.9099C39.8683 30.6688 40 30.3418 40 30.0008C40 29.6598 39.8683 29.3328 39.6339 29.0917C39.3995 28.8507 39.0815 28.7152 38.75 28.7152Z"
+                  fill="#7079db" />
+              </svg>
+            </a>
+            <a href="#" class="slider__arrow slider__arrow-next">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" transform="rotate(-180 30 30)" stroke="#3D7FFF" stroke-width="2" />
+                <path
+                  d="M21.25 31.2848L36.075 31.2848L31.5375 36.89C31.3253 37.1525 31.2232 37.491 31.2537 37.831C31.2842 38.1709 31.4447 38.4845 31.7 38.7027C31.9553 38.9209 32.2844 39.0259 32.6149 38.9946C32.9454 38.9632 33.2503 38.7981 33.4625 38.5356L39.7125 30.822C39.7545 30.7606 39.7922 30.6962 39.825 30.6291C39.825 30.5649 39.825 30.5263 39.9125 30.462C39.9692 30.3146 39.9988 30.1577 40 29.9992C39.9988 29.8407 39.9692 29.6838 39.9125 29.5364C39.9125 29.4721 39.9125 29.4335 39.825 29.3693C39.7922 29.3022 39.7545 29.2378 39.7125 29.1764L33.4625 21.4628C33.345 21.3177 33.1978 21.201 33.0314 21.121C32.8651 21.041 32.6836 20.9997 32.5 21C32.2079 20.9994 31.9249 21.104 31.7 21.2957C31.5734 21.4036 31.4688 21.5362 31.3921 21.6857C31.3154 21.8353 31.2682 21.999 31.2531 22.1674C31.238 22.3357 31.2553 22.5055 31.3041 22.667C31.3529 22.8285 31.4322 22.9785 31.5375 23.1084L36.075 28.7136H21.25C20.9185 28.7136 20.6005 28.849 20.3661 29.0901C20.1317 29.3312 20 29.6582 20 29.9992C20 30.3402 20.1317 30.6672 20.3661 30.9083C20.6005 31.1493 20.9185 31.2848 21.25 31.2848Z"
+                  fill="#7079db" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="container">
+          <a href="#" class="reviews__button">
+            <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M49.5636 0.997435C52.51 -0.243172 55.6687 2.2483 55.1484 5.40267L49.0035 42.6604C48.4109 46.2528 44.4654 48.3141 41.1697 46.5239C38.4118 45.0259 34.32 42.7203 30.6323 40.3107C28.7909 39.1074 23.1525 35.2491 23.8455 32.5026C24.4381 30.1542 33.917 21.3307 39.3337 16.0833C41.4613 14.0221 40.4923 12.8313 37.9795 14.7291C31.746 19.437 21.7382 26.5949 18.4288 28.6093C15.5088 30.3865 13.9842 30.6899 12.1657 30.3865C8.84496 29.8332 5.76621 28.9763 3.25266 27.9344C-0.14459 26.5261 0.020889 21.8575 3.25036 20.4979L49.5636 0.997435Z"
+                fill="white" />
+            </svg>
+            <p>Задать вопрос в Telegramm</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--End of SECTION-REVIEWS -->
+
+    <!-- SECTION-MAP -->
+    <section class="map main__map">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d973.839512104824!2d43.99355601814814!3d56.31659199823298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d44933647983%3A0xf3c50d5e6096c4f1!2z0JDRgNCx0LDRgg!5e1!3m2!1sru!2sru!4v1687286225680!5m2!1sru!2sru"
+          width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </section>
+    <!--End of SECTION-MAP -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="background__container footer__bg">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#header">
+                  <img src="img/footer/footer-logo.png" alt="Footer logo">
+                </a>
+              </li>
+              <div class="footer__item-nowrap">
+                <li class="footer__item">
+                  <p>Офис: г. Нижний Новгород ул. Покровская 52</p>
+                  <p>График работы с 18:00 до 20:00</p>
+                  <p>Телефон : <a href="#"><span>8 ( 800 ) 377-28-32</span></a></p>
+                </li>
+                <li class="footer__item">
+                  <p>График работы удаленных переводов: с 12:00 до 00:00</p>
+                  <p>Группа в телеграмм: <a href="#"><span>@KOREAKAB</span></a></p>
+                  <p>Контакт для переводов: <a href="#"><span>@KOREAAB</span></a></p>
+                </li>
+              </div>
+            </ul>
+            <div class="footer__copyright">
+              <p>Korea Advice Bartet 1997-2023 ©️</p>
+              <p>Лицензия № 3992 777 99 от 23.12.1997</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

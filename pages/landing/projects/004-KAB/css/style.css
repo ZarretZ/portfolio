@@ -1,0 +1,600 @@
+/* ---------------GLOBAL--------------- */
+/* ---------------GLOBAL--------------- */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+html,
+body {
+  color: #ffffff;
+  font-family: Manrope, sans-serif;
+}
+
+.background__container {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1354px;
+  padding: 0 15px 0 15px;
+}
+
+.calc__input {
+  padding-left: 49px;
+  background: #2e3049;
+  border-radius: 15px;
+  height: 100px;
+  max-width: 585px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 90px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.calc__input-pseudo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.calc__input-pseudo::before {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 90px;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 75px;
+  right: 15px;
+  top: 12px;
+  background: #17192e;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.calc__input-pseudo::after {
+  content: "";
+  position: absolute;
+  height: 32px;
+  top: 36px;
+  border-radius: 15px;
+  z-index: 1;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 90px;
+  color: #061122;
+}
+
+/* ---------------TOTOP--------------- */
+/* ---------------TOTOP--------------- */
+.scroll-button {
+  position: fixed;
+  right: 20px;
+  z-index: 15;
+  bottom: 60px;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  background-color: #7079db;
+}
+
+/* ---------------NAVIGATION--------------- */
+/* ---------------NAVIGATION--------------- */
+
+.header__bg {
+  background: url(../img/header/header-background.jpg) center center / cover
+    no-repeat;
+}
+
+.header__nav-inner {
+  display: flex;
+  align-items: center;
+  padding: 47px 0;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button__box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.button__call-box {
+  display: flex;
+  width: 124px;
+  height: 60px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.button__call {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c1fc7;
+  line-height: 22px;
+}
+
+.button__exchange-box {
+  display: flex;
+  width: 154px;
+  height: 60px;
+  border-radius: 10px;
+  background: #5d65ba;
+}
+
+.button__exchange {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/* ---------------HEADER-BODY--------------- */
+/* ---------------HEADER-BODY--------------- */
+
+.header__body-inner {
+  display: flex;
+  align-items: center;
+  padding: 0 0 418px 0;
+  flex-direction: column;
+}
+
+.header__body-inner img {
+  width: 100%;
+}
+
+.header__slogan-box {
+  padding: 30px 0 6px 0;
+}
+
+.header__body-title h1 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 90px;
+  text-align: center;
+}
+
+/* ---------------ABOUT--------------- */
+/* ---------------ABOUT--------------- */
+
+.about__bg {
+  background: linear-gradient(96.85deg, #d9d9d9 0.29%, #ffffff 100%);
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+  padding: 110px 0 100px 0;
+  justify-content: space-between;
+}
+
+.about__image-box img {
+  /* width: 100%; */
+  max-width: 465px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+
+.about__content p {
+  max-width: 802px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #282b4f;
+}
+
+.p__margin {
+  padding: 5px 0 23px 0;
+}
+
+.about__list {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 76px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__item-number {
+  display: block;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 30px;
+  color: #7079db;
+}
+
+.about__item-text {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #17192e;
+  white-space: nowrap;
+}
+
+/* ----------------CALC---------------- */
+/* ----------------CALC---------------- */
+
+.calc__bg {
+  background: url(../img/calc/calc-background.jpg) center center / cover
+    no-repeat;
+}
+
+.calc__inner {
+  padding: 78px 0 220px 0;
+}
+
+.calc__title h2 {
+  color: #ffffff;
+}
+
+.calc__input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 52px 0 48px 0;
+  width: 100%;
+}
+
+.rub::after {
+  right: 36px;
+  width: 58px;
+  background: url(../img/calc/calc-rub.png) center center / cover no-repeat;
+}
+
+.won::after {
+  right: 41px;
+  width: 45px;
+  background: url(../img/calc/calc-won.png) center center / cover no-repeat;
+}
+
+.calc__input-won {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.calc__arrows {
+  margin: 0 30px;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background: #2e3049;
+}
+
+.calc__arrows::after {
+  top: 50%;
+  left: 50%;
+  width: 37px;
+  content: "";
+  height: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: url(../img/calc/calc-arrows.svg);
+}
+
+.calc__form-button {
+  width: 100%;
+  height: 100px;
+  background: #5d65ba;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* --------------SECTION-REVIEWS-------------- */
+/* --------------SECTION-REVIEWS-------------- */
+
+.reviews__inner {
+  position: relative;
+  padding: 90px 0 100px 0;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+  width: 1320px; /* Ширина слайдера */
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__cards {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  width: 100%; /* Ширина всех слайдов */
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__card {
+  flex: 0 0 calc(100% / 4); /* Расчет размера слайда*/
+  padding-bottom: 80px;
+}
+
+.slider__card-box img {
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__arrows {
+  gap: 20px;
+  content: "";
+  right: 30px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+}
+
+.slider__arrow {
+  z-index: 0;
+  line-height: 0;
+  display: block;
+  position: relative;
+}
+
+.slider__arrow::before {
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  z-index: -1;
+  content: "";
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s;
+  background-color: #7079db;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.slider__arrow:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.slider__arrow path {
+  transition: all 0.3s;
+}
+
+.slider__arrow:hover path {
+  fill: #ffffff;
+}
+
+.slider__arrow-prev.disabled,
+.slider__arrow-next.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  /* Дополнительные стили для визуального отключения кнопок, если нужно */
+}
+
+.reviews__button {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5d65ba;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.reviews__button svg {
+  margin-right: 20px;
+}
+
+/* --------------SECTION-MAP-------------- */
+/* --------------SECTION-MAP-------------- */
+
+.main__map {
+  padding: 50px 0 0 0;
+}
+
+/* ----------------FOOTER---------------- */
+/* ----------------FOOTER---------------- */
+
+.footer__bg {
+  background: url(../img/footer/footer-background-image.jpg) center center /
+    cover no-repeat;
+}
+
+.footer__inner {
+  padding: 120px 0 0 0;
+}
+
+.footer__list {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.footer__item-nowrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.footer__item p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ececec;
+}
+
+.footer__item span {
+  color: #7079db;
+}
+
+.footer__item span:hover {
+  color: #969bd6;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #070707;
+  padding: 15px 0 15px 0;
+  gap: 20px;
+}
+
+/* -------------------MEDIA---------------- */
+/* -------------------MEDIA---------------- */
+
+/* ---SLIDER--- */
+/* ---SLIDER--- */
+@media (max-width: 1320px) {
+  .slider {
+    width: 990px;
+  }
+
+  .slider__card {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+@media (max-width: 990px) {
+  .slider {
+    width: 660px;
+  }
+
+  .slider__card {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+@media (max-width: 660px) {
+  .slider {
+    width: 330px;
+  }
+
+  .slider__card {
+    flex: 0 0 calc(100% / 1);
+  }
+}
+
+/* ---FOOTER--- */
+/* ---FOOTER--- */
+@media (max-width: 1116px) {
+  .footer__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer__item-nowrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ---1240--- */
+/* ---1240--- */
+@media (max-width: 1240px) {
+  .about__list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* ---950--- */
+/* ---950--- */
+@media (max-width: 950px) {
+  .about__inner {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* ---767--- */
+/* ---767--- */
+@media (max-width: 767.98px) {
+  .header__nav-inner {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .about__image-box img {
+    width: 100%;
+    margin-right: 0;
+    max-width: 465px;
+  }
+
+  .header__nav-list {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---753--- */
+/* ---753--- */
+@media (max-width: 753px) {
+  .header__nav-list {
+    padding-bottom: 30px;
+  }
+}
+
+/* ---710--- */
+/* ---710--- */
+@media (max-width: 710px) {
+  .calc__input-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .calc__arrows {
+    margin: 10px 0;
+  }
+
+  .calc__input-pseudo {
+    justify-content: flex-end;
+  }
+}
